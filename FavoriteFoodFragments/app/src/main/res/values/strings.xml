@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FavoriteFoodFragments</string>
+    <string name="el_burrito">El Burrito</string>
+    <string name="my_favorite_food">My Favorite Food</string>
+    <string name="cheesecake_factory">Cheesecake Factory</string>
+    <string name="ginza">Ginza</string>
+    <string name="china_one_buffet">China One Buffet</string>
+    <string name="favorite_places">Favorite Places</string>
+    <string name="el_burrito_favorite"> <b>El Burrito</b> \n <i>Chicken Nachos add Jalapenos</i></string>
+    <string name="china_one_buffet_favorite"><b>China One Buffet</b> \n <i>General Tso\'s Chicken</i></string>
+    <string name="cheesecake_factory_favorite"><b>Cheesecake Factory</b> \n <i>Shepherd\'s Pie</i></string>
+    <string name="ginza_favorite"><b>Ginza</b> \n <i>Tonkatsu Ramen</i></string>
+</resources>

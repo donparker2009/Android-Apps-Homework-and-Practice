@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewFirstUnit"
+        android:layout_width="50dp"
+        android:layout_height="66dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOutput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewInput"
+        app:layout_constraintTop_toTopOf="@+id/textViewOutput" />
+
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="126dp"
+        android:layout_height="66dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSecondUnit"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSecondUnit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFirstUnit" />
+
+    <TextView
+        android:id="@+id/textViewSecondUnit"
+        android:layout_width="50dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="11dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInputLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/textViewInput"
+        android:layout_width="126dp"
+        android:layout_height="66dp"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFirstUnit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewFirstUnit" />
+
+    <Button
+        android:id="@+id/buttonEurosToDollars"
+        android:layout_width="180dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="onButtonEurosToDollarsClick"
+        android:text="Euros -> Dollars"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKmToMi"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDollarsToEuros"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInputLabel" />
+
+    <Button
+        android:id="@+id/buttonKmToMi"
+        android:layout_width="180dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="199dp"
+        android:onClick="onButtonKmtoMiClick"
+        android:text="km -> mi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMiToKm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEurosToDollars" />
+
+    <Button
+        android:id="@+id/buttonMiToKm"
+        android:layout_width="180dp"
+        android:layout_height="76dp"
+        android:onClick="onButtonMiToKmClick"
+        android:text="mi -> km"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonKmToMi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonKmToMi" />
+
+    <Button
+        android:id="@+id/buttonDollarsToEuros"
+        android:layout_width="180dp"
+        android:layout_height="76dp"
+        android:onClick="onButtonDollarstoEurosClick"
+        android:text="Dollars -> Euros"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEurosToDollars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonEurosToDollars" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="401dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="6dp"
+        android:text="Unit Converter"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Input"
+        app:layout_constraintStart_toStartOf="@+id/textViewInput"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInput" />
+
+    <TextView
+        android:id="@+id/textViewOutputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Output"
+        app:layout_constraintStart_toStartOf="@+id/textViewOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOutput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
